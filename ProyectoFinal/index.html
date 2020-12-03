@@ -32,6 +32,49 @@
             width: 1100px;
             margin: 0px;
         }
+
+        .caja-servicio h5 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .pd-90 {
+            padding: 90px 0;
+        }
+
+        .fs-40 {
+            font-size: 40px;
+        }
+
+        .fila {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .caja-galeria {
+            width: 33.3333333%;
+            padding: 0 10px;
+        }
+
+        .caja-galeria img {
+            width: 100%;
+            display: block;
+        }
+
+        .redes-sociales a {
+            background-color: #15a4fa;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .redes-sociales a i{
+            color: white;
+        }
+
     </style>
 </head>
 
@@ -73,21 +116,22 @@
 
     </section>
 
-    <section id="servicios">
+    <section id="servicios" style="padding: 90px 0;">
 
-        <div class="contenedor">
-            <div class="caja-servicio">
+        <div class="contenedor" style="display: flex;">
+
+            <div class="caja-servicio" style="width: 33.3%;text-align: center;padding: 0 19px;">
                 <img src="img/icon-movil.jpg" alt="">
                 <h5>Optimized for all devices</h5>
                 <span>Strict has been designed</span>
             </div>
             <div class="caja-servicio">
-                <img src="img/icon-movil.jpg" alt="">
+                <img src="img/icon-enviar.jpg" alt="">
                 <h5>Optimized for all devices</h5>
                 <span>Strict has been designed</span>
             </div>
             <div class="caja-servicio">
-                <img src="img/icon-movil.jpg" alt="">
+                <img src="img/icon-voz.jpg" alt="">
                 <h5>Optimized for all devices</h5>
                 <span>Strict has been designed</span>
             </div>
@@ -101,15 +145,20 @@
             <span>Contact me if you like my work</span>
         </div>
         <div class="galeria">
-            <div class="caja-galeria">
-                <img src="img/show-1.jpg" alt="">
+
+            <div class="fila">
+                <div class="caja-galeria">
+                    <img src="img/show-1.jpg" alt="">
+                </div>
+                <div class="caja-galeria">
+                    <img src="img/show-2.jpg" alt="">
+                </div>
+                <div class="caja-galeria">
+                    <img src="img/show-3.jpg" alt="">
+                </div>
             </div>
-            <div class="caja-galeria">
-                <img src="img/show-2.jpg" alt="">
-            </div>
-            <div class="caja-galeria">
-                <img src="img/show-3.jpg" alt="">
-            </div>
+
+
             <div class="caja-galeria">
                 <img src="img/show-4.jpg" alt="">
             </div>
@@ -123,25 +172,27 @@
     </section>
 
     <section id="stay" style="background:url(img/bg-stay.jpg)">
-        <div class="encabezado">
-            <h2>Stay with us</h2>
-            <span>We ensue quality</span>
-        </div>
-        <form action="" id="contacto">
-            <input type="text" placeholder="Full name">
-            <input type="email" placeholder="Email adress">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-
-            <div>
-                <div class="check">
-                    <input id="subs" type="checkbox">
-                    <label for="subs">Suscribe Newsletter</label>
-                </div>
-                <div class="btn">
-                    <button type="button">Send</button>
-                </div>
+        <div class="contenedor">
+            <div class="encabezado" style="text-align:center;margin-bottom: 2'px;">
+                <h2 class="fs-40" style="color: white;">Stay with us</h2>
+                <span style="color: white;">We ensue quality</span>
             </div>
-        </form>
+            <form action="" id="contacto">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="Email adress">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+
+                <div>
+                    <div class="check">
+                        <input id="subs" type="checkbox">
+                        <label for="subs">Suscribe Newsletter</label>
+                    </div>
+                    <div class="btn">
+                        <button type="button">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
 
     <footer>
